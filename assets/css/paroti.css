@@ -655,14 +655,13 @@ h6 {
   background-size: cover;
   background-position: center center;
   background-blend-mode: color-dodge;
-  background-color: var(--paroti-black, #144047);
   opacity: 0.4;
 }
 
 .slider-one__title {
   margin: 0;
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1em;
@@ -673,17 +672,21 @@ h6 {
   opacity: 0;
   -webkit-transition-delay: 2500ms;
           transition-delay: 2500ms;
-  -webkit-transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+  -webkit-transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
 }
 
 @media (min-width: 768px) {
   .slider-one__title {
-    font-size: 6.25rem;
+    font-size: 4rem;
     margin-bottom: 32px;
     margin-top: -20px;
   }
@@ -739,10 +742,14 @@ h6 {
   opacity: 0;
   -webkit-transition-delay: 1500ms;
           transition-delay: 1500ms;
-  -webkit-transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+  -webkit-transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
 }
 
 @media (min-width: 768px) {
@@ -768,10 +775,14 @@ h6 {
   opacity: 0;
   -webkit-transition-delay: 2500ms;
           transition-delay: 2500ms;
-  -webkit-transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease;
-  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+  -webkit-transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease;
+  transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+ background 500ms ease, -webkit-transform 2000ms ease;
 }
 
 .active .slider-one__btns {
@@ -5423,7 +5434,7 @@ h6 {
 @media (min-width: 1200px) {
   .funfact-one__inner {
     -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -6585,7 +6596,7 @@ h6 {
   // Newsletter
 */
 .newsletter-one {
-  background-color: var(--paroti-base, #df5311);
+  background-color: #8139e7;
   position: relative;
   padding: 6.25rem 0;
 }
@@ -6655,7 +6666,7 @@ h6 {
 }
 
 .newsletter-one .sec-title__tagline {
-  color: #f5c9b4;
+  color: #fff;
   font-size: 20px;
 }
 
