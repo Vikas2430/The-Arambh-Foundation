@@ -10,8 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Page || Paroti || Non Profit Charity HTML Template</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/volunteers/Logo.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/volunteers/Logo.png">
 	<link rel="manifest" href="assets/images/favicons/site.webmanifest">
 	<!-- google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -25,6 +25,19 @@
 	<link rel="stylesheet" href="assets/vendors/paroti-icons/style.css">
 	<!-- template css -->
 	<link rel="stylesheet" href="assets/css/paroti.css">
+	<style>
+		/* For screens smaller than 768px (typical mobile phones) */
+		@media (max-width: 767px) {
+	
+			/* Adjust the image height and width here */
+			img {
+				max-width: 100%;
+				/* Make sure the image doesn't exceed the container width */
+				height: auto;
+				/* Maintain the aspect ratio */
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -42,115 +55,48 @@
 	</div><!-- /.preloader -->
 
 	<div class="page-wrapper">
-		<header class="main-header">
-			<div class="topbar">
-				<div class="container-fluid">
-					<div class="topbar__inner">
-						<ul class="list-unstyled topbar__info">
-							<li>
-								<i class="fa fa-map"></i>
-								<a href="#">88 broklyn golden street. New York</a>
-							</li>
-							<li>
-								<i class="fa fa-envelope-open"></i>
-								<a href="mailto:needhelp@company.com">needhelp@company.com</a>
-							</li>
-							<li>
-								<i class="fa fa-mobile"></i>
-								<a href="tel:+1(307)776-0608">+ 1 (307) 776-0608</a>
-							</li>
-						</ul><!-- /.topbar__info -->
-						<div class="topbar__social">
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-pinterest"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-						</div>
-						<ul class="list-unstyled topbar__links">
-							<li><a href="#">Login</a></li>
-							<li><a href="#">Register</a></li>
-						</ul><!-- /.topbar__links -->
-					</div><!-- /.topbar__inner -->
-				</div><!-- /.container-fluid -->
-			</div><!-- /.topbar -->
-			<nav class="main-menu sticky-header">
+		<header class="main-header main-header--three main-header--two">
+			<nav class="main-menu sticky-header main-menu--three">
 				<div class="container-fluid">
 					<a href="index-2.html" class="main-header__logo">
-						<img src="assets/images/logo-dark.png" width="127" height="49" alt="">
+						<img src="assets/images/volunteers/Logo.png" width="100" height="100" alt="">
 					</a>
 
 					<ul class="main-menu__list">
-						<li class="menu-item-has-children">
-							<a href="index-2.html">Home</a>
-							<ul>
-								<li><a href="index-2.html">Home one</a></li>
-								<li><a href="index-3.html">Home two</a></li>
-								<li><a href="index-4.html">Home three</a></li>
-								<li class="menu-item-has-children"><a href="index-2.html">Header styles</a>
-									<ul>
-										<li><a href="index-2.html">Header one</a></li>
-										<li><a href="index-3.html">Header two</a></li>
-										<li><a href="index-4.html">Header three</a></li>
-									</ul>
-								</li>
-							</ul>
+						<li>
+							<a href="index.html">Home</a>
 						</li>
-						<li class="menu-item-has-children">
-							<a href="#">Pages</a>
-							<ul>
-								<li><a href="about.html">About us</a></li>
-								<li><a href="volunteers.html">Our volunteer</a></li>
-							</ul>
+						<li>
+							<a href="about.html">About Us</a>
 						</li>
-						<li class="menu-item-has-children">
-							<a href="donations.html">Donations</a>
-							<ul>
-								<li><a href="donations.html">Donations</a></li>
-								<li><a href="donations-details.html">Donations details</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
-							<a href="events.html">Events</a>
-							<ul>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="event-details.html">Events details</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
+						<li>
 							<a href="blog.html">Blog</a>
-							<ul>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-details.html">Blog details</a></li>
-							</ul>
+						</li>
+						<li>
+							<a href="units.html">Unit</a>
+						</li>
+						<li>
+							<a href="project.html">Project</a>
+						</li>
+						<li>
+							<a href="donations.html">Event</a>
+						</li>
+						<li>
+							<a href="donations.html">Gallery</a>
 						</li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul><!-- /.main-menu__list -->
 
 					<div class="main-menu__right">
-						<div class="main-menu__cta">
-							<div class="main-menu__cta__icon">
-								<i class="paroti-icon-volunteer"></i>
-							</div><!-- /.main-menu__cta__icon -->
-							<div class="main-menu__cta__text">
-								<span>Join us now</span>
-								<a href="contact.html">Become a Volunteer</a>
-							</div><!-- /.main-menu__cta__text -->
-						</div><!-- /.main-menu__cta -->
-						<a href="donations-details.html" class="thm-btn thm-btn--two ">
-							<span>Donate Now</span>
-							<i class="fa fa-heart"></i>
-						</a><!-- /.thm-btn--two -->
-						<a href="#" class="main-header__btn search-toggler">
-							<i class="paroti-icon-magnifying-glass"></i>
-						</a>
-						<a href="donations.html" class="main-header__btn">
-							<i class="paroti-icon-shopping-cart"></i>
-						</a>
 						<a href="#" class="main-header__toggler mobile-nav__toggler">
 							<span></span>
 							<span></span>
 							<span></span>
 						</a>
+						<a href="donations-details.html" class="thm-btn thm-btn--two ">
+							<span>Donate Now</span>
+							<i class="fa fa-heart"></i>
+						</a><!-- /.thm-btn--two -->
 					</div><!-- /.main-menu__right -->
 				</div><!-- /.container-fluid -->
 			</nav><!-- /.main-menu -->
@@ -164,6 +110,35 @@
 				<h2 class="page-header__title">About Us</h2>
 			</div><!-- /.container -->
 		</section><!-- /.page-header -->
+
+		<section class="about-six about-six--pad-top about-six--pad-bottom">
+			<div class="about-six__bg" style="background-image: url(assets/images/backgrounds/about-six-bg-1-1.png);">
+			</div><!-- /.about-six__bg -->
+			<div class="about-six__shape float-bob-x"
+				style="background-image: url(assets/images/shapes/about-six-s-1.png)"></div>
+			<!-- /.about-six__shape -->
+			<div class="container">
+				<div class="row gutter-y-60">
+					<div class="col-lg-6">
+						<div class="about-six__images">
+							<img src="assets/images/volunteers/History.jpeg" height="494" width="400" alt="">
+						</div><!-- /.about-six__images -->
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="about-six__content">
+							<div class="sec-title text-start">
+								<!-- <p class="sec-title__tagline">What we do?</p> -->
+								<!-- /.sec-title__tagline -->
+								<h2 class="sec-title__title">History</h2>
+							</div><!-- /.sec-title -->
+							<div class="about-six__content__text">The Aarambh happened with the diligent efforts of Joslyn Choudhary and a few seed members in September 2020 who came together during the pandemic to help those in need. In less than two years, the organisation of a few members gradually received the contribution of students from 14 DU colleges, with the power of social media and conducted countless drives under the various projects. Currently, The Aarambh has become a family of 1500+ members and is spread across more than 50 DU colleges with specific units dedicated to animal welfare, women empowerment, education and elderly care. We are at a stage where we commence all our projects simultaneously and conduct fortnightly drives, headed by dedicated members of The Aarambh</div>
+							<!-- /.about-six__content__text -->
+						</div><!-- /.about-six__content -->
+					</div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.about-six -->
+
 		<section class="sec-pad-top sec-pad-bottom about-one">
 			<div class="about-one__shape-1 float-bob-y">
 				<img src="assets/images/shapes/about-1-1.png" alt="">
@@ -175,37 +150,27 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="about-one__images wow fadeInLeft" data-wow-duration="1500ms">
-							<img src="assets/images/resources/about-1-1.jpg" alt="">
-							<img src="assets/images/resources/about-1-2.jpg" alt="">
+							<img src="assets/images/volunteers/Joslyn founder.webp" style="height: 700px; width: 553px;" alt=""> 
+							<!-- <img src="assets/images/resources/about-1-2.jpg" alt=""> -->
 						</div><!-- /.about-one__images -->
 					</div><!-- /.col-lg-6 -->
 					<div class="col-lg-6">
 						<div class="about-one__content">
 							<div class="sec-title">
-								<p class="sec-title__tagline">More about the paroti</p><!-- /.sec-title__tagline -->
-								<h2 class="sec-title__title">We believe that we
-									can save life</h2>
+								<p class="sec-title__tagline">Know more about who made this possible</p><!-- /.sec-title__tagline -->
+								<h2 class="sec-title__title">A note from founder</h2>
 							</div><!-- /.sec-title -->
-							<ul class="list-unstyled about-one__list">
-								<li>
-									<i class="fa fa-check-circle"></i>
-									Donate to Poors
-								</li>
-								<li>
-									<i class="fa fa-check-circle"></i>
-									Deserving People
-								</li>
-							</ul><!-- /.about-one__list -->
-							<div class="about-one__tagline">Paroti is the largest global charity and crowdfunding
-								community in the world.</div><!-- /.about-one__tagline -->
-							<p class="about-one__text">We are trusted by our clients and have a reputation for the best
-								services in the field.
-								Lorem ipsum is simply free text dolor sit amett consectetur adipiscing elit.</p>
+							<div class="about-one__tagline">In the heart of adversity, amidst the echoes of the pandemic, "The Aarambh" was born.</div><!-- /.about-one__tagline -->
+							<p class="about-one__text">The Aarambh's journey began in September 2020 with just a handful of us, right in the middle of the tough Covid times. We all knew how people were going through a lot, and that's when I had this thought - we should help those in need, even if it's just one person. So, I started in my hometown, Jodhpur. Social media was a big help, and we found so many people eager to join our cause. It made me realize that there are caring folks out there who are ready to make a real change for our society. The Aarambh gave them a great platform to make a difference. As time passed and with the help of our dedicated volunteers, The Aarambh expanded. 40+Esteemed Colleges 1000+ Members 3 Years and Counting!
+								I'm really proud of the whole The Aarambh Family. They're a bunch of kind, empathetic, and socially responsible people. I'm thankful that The Aarambh provides a stage for these amazing souls. My vision for the future is to turn The Aarambh into a team capable of helping everyone in every way possible. That's how we want to give back to society.
+								Welcome to The Aarambh, where every heartbeat resounds with the rhythm of kindness, and every step is a leap towards a brighter, more compassionate world.
+								
+								"चलो आरंभ करें !" – Let's Begin!</p>
 							<div class="about-one__meta clearfix">
-								<img src="assets/images/resources/testi-1-1.png" alt="">
-								<h3 class="about-one__name">Mike hardson</h3>
+								<img src="assets/images/volunteers/WhatsApp-Image-2023-10-14-at-20.10.41.jpeg" style="height: 75px; width: 75px;" alt="">
+								<h3 class="about-one__name">Joslyn Chaudhary</h3>
 								<!-- /.about-one__name -->
-								<p class="about-one__designation">CEO & CO Founder</p>
+								<p class="about-one__designation">Founder</p>
 								<!-- /.about-one__designation -->
 							</div><!-- /.about-one__meta -->
 						</div><!-- /.about-one__content -->
@@ -214,322 +179,84 @@
 			</div><!-- /.container -->
 		</section><!-- /.sec-pad-top sec-pad-bottom -->
 
-		<section class="sec-pad-top sec-pad-bottom sponsor-carousel">
+		<section class="sec-pad-top sec-pad-bottom about-one">
+			<div class="about-one__shape-1 float-bob-y">
+				<img src="assets/images/shapes/about-1-1.png" alt="">
+			</div><!-- /.about-one__shape-1 -->
+			<div class="about-one__shape-2 float-bob-x">
+				<img src="assets/images/shapes/about-1-2.png" alt="">
+			</div><!-- /.about-one__shape-2 -->
 			<div class="container">
-				<div class="thm-tns__carousel" id="sponsor-carousel-1" data-tns-options='{
-					"container": "#sponsor-carousel-1",
-					"loop": true,
-					"autoplay": true,
-					"items": 2,
-					"gutter": 30,
-					"mouseDrag": true,
-					"touch": true,
-					"nav": false,
-					"autoplayButtonOutput": false,
-					"controls": false,
-					"responsive": {
-						"0": {
-							"items": 2,
-							"gutter": 30
-						},
-						"576": {
-							"items": 3,
-							"gutter": 30
-						},
-						"768": {
-							"items": 4,
-							"gutter": 30
-						},
-						"992": {
-							"items": 5,
-							"gutter": 50
-						},
-						"1200": {
-							"items": 5,
-							"gutter": 140
-						}
-					}
-				}'>
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-					<div class="item">
-						<img src="assets/images/resources/brand-1.png" alt="">
-					</div><!-- /.item -->
-				</div><!-- /.thm-tns__carousel -->
-			</div><!-- /.container -->
-		</section><!-- /.sec-pad-top sec-pad-bottom -->
-
-		<section class="sec-pad-top cta-one cta-one--pad-bottom">
-			<div class="cta-one__bg" style="background-image: url(assets/images/backgrounds/cta-bg-1-1.jpg);"></div>
-			<div class="cta-one__shape" style="background-image: url(assets/images/shapes/cta-s-1-1.png)">
-			</div>
-			<!-- /.cta-one__shape -->
-			<!-- /.cta-one__bg -->
-			<div class="container  text-center">
-				<div class="sec-title">
-					<p class="sec-title__tagline">We’re here to support poor people</p><!-- /.sec-title__tagline -->
-					<h2 class="sec-title__title">Fundraising for the people and <br>
-						<span>causes</span> you care about</h2>
-				</div><!-- /.sec-title -->
-				<a href="donations.html" class="thm-btn cta-one__btn"><span>Start donating thAem</span></a>
-			</div><!-- /.container -->
-		</section>
-
-		<section class="funfact-one funfact-one--m-margin-top">
-			<div class="container">
-				<div class="funfact-one__inner wow fadeInUp">
-					<div class="funfact-one__item">
-						<h3 class="count-box funfact-one__title"><span data-stop="4850" data-speed="1500"
-								class="count-text"></span><!-- /.count-text -->
-						</h3><!-- /.count-box -->
-						<p class="funfact-one__text">Total Campaigns</p><!-- /.funfact-one__text -->
-					</div><!-- /.funfact-one__item -->
-					<div class="funfact-one__item">
-						<h3 class="count-box funfact-one__title"><span data-stop="3456" data-speed="1500"
-								class="count-text"></span><!-- /.count-text -->
-						</h3><!-- /.count-box -->
-						<p class="funfact-one__text">Raised Funds</p><!-- /.funfact-one__text -->
-					</div><!-- /.funfact-one__item -->
-					<div class="funfact-one__item">
-						<h3 class="count-box funfact-one__title"><span data-stop="480" data-speed="1500"
-								class="count-text"></span><!-- /.count-text -->
-						</h3><!-- /.count-box -->
-						<p class="funfact-one__text">Satisfied Donors</p><!-- /.funfact-one__text -->
-					</div><!-- /.funfact-one__item -->
-					<div class="funfact-one__item">
-						<h3 class="count-box funfact-one__title"><span data-stop="2068" data-speed="1500"
-								class="count-text"></span><!-- /.count-text -->
-						</h3><!-- /.count-box -->
-						<p class="funfact-one__text">Happy Volunteers</p><!-- /.funfact-one__text -->
-					</div><!-- /.funfact-one__item -->
-				</div><!-- /.funfact-one__inner -->
-			</div><!-- /.container -->
-		</section>
-
-		<section class="sec-pad-top sec-pad-bottom">
-			<div class="container">
-				<div class="sec-title text-center">
-					<p class="sec-title__tagline">Ready to help you</p><!-- /.sec-title__tagline -->
-					<h2 class="sec-title__title">Happy volunteers</h2>
-				</div><!-- /.sec-title -->
-				<div class="row gutter-y-30">
-					<div class="col-md-6 col-lg-4">
-						<div class="volunteers-card">
-							<h3 class="volunteers-card__title"><a href="#">Sarah albert</a></h3>
-							<p class="volunteers-card__designation">Volunteers</p>
-							<div class="volunteers-card__image">
-								<img src="assets/images/volunteers/volunteers-1.jpg" alt="">
-							</div><!-- /.volunteers-card__image -->
-							<div class="volunteers-card__social">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-						</div><!-- /.volunteers-card -->
-					</div><!-- /.col-md-6 col-lg-4 -->
-					<div class="col-md-6 col-lg-4">
-						<div class="volunteers-card">
-							<h3 class="volunteers-card__title"><a href="#">Mike hardson</a></h3>
-							<p class="volunteers-card__designation">Volunteers</p>
-							<div class="volunteers-card__image">
-								<img src="assets/images/volunteers/volunteers-2.jpg" alt="">
-							</div><!-- /.volunteers-card__image -->
-							<div class="volunteers-card__social">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-						</div><!-- /.volunteers-card -->
-					</div><!-- /.col-md-6 col-lg-4 -->
-					<div class="col-md-6 col-lg-4">
-						<div class="volunteers-card">
-							<h3 class="volunteers-card__title"><a href="#">Aleesha brown</a></h3>
-							<p class="volunteers-card__designation">Volunteers</p>
-							<div class="volunteers-card__image">
-								<img src="assets/images/volunteers/volunteers-3.jpg" alt="">
-							</div><!-- /.volunteers-card__image -->
-							<div class="volunteers-card__social">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-						</div><!-- /.volunteers-card -->
-					</div><!-- /.col-md-6 col-lg-4 -->
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="about-one__images wow fadeInLeft" data-wow-duration="1500ms">
+							<img src="assets/images/volunteers/Aditya chairman.webp" style="height: 700px; width: 553px;" alt=""> 
+							<!-- <img src="assets/images/resources/about-1-2.jpg" alt=""> -->
+						</div><!-- /.about-one__images -->
+					</div><!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="about-one__content">
+							<div class="sec-title">
+								<!-- <p class="sec-title__tagline">Know more about who made this possible</p>/.sec-title__tagline -->
+								<h2 class="sec-title__title">A note from chairperson</h2>
+							</div><!-- /.sec-title -->
+							<!-- <div class="about-one__tagline">In the heart of adversity, amidst the echoes of the pandemic, "The Aarambh" was born.</div>/.about-one__tagline -->
+							<p class="about-one__text">I joined The Aarambh Organisation in 2020 as an HR member. All the activities then took place online due to COVID-19. I was in charge of all the tasks concerning recruitment, training and efficient functioning of the members - the human resource. In December 2020 I was promoted to the position of the Vice President and then began my journey of bringing about an impact on the society at large through The Aarambh. Gradually, we progressed and grew to be a team of 400+ members from various colleges across India. We started more initiatives to benefit the underprivileged sections of the society and eventually I found myself working selflessly for The Aarambh. The lives of the people we impacted started holding a significance for me. After 6 months when I stepped up as the President of the organization, I vowed to myself to give my best throughout and establish The Aarambh as the representative of the underprivileged. We broadened our horizons, covered more sections of the society, focussed on more social issues and brought about a difference in the society with our team of 1100+ members. Now, being the Chairperson of The Aarambh Organization, I aim to develop this organisation into a place where everyone feels welcomed. The initiatives of the organisation are such that we try to cater to the needs of most of the individuals in the underprivileged sections of the society. We welcome aboard students who possess a mindset of working selflessly and actually creating an impact on society. Your enthusiasm combined with our experience and resources is capable to make the society a better place for everyone!</p>
+							<div class="about-one__meta clearfix">
+								<img src="assets/images/volunteers/Aditya chairman.jpg" style="height: 75px; width: 75px;" alt="">
+								<h3 class="about-one__name">Aditya Apurva</h3>
+								<!-- /.about-one__name -->
+								<p class="about-one__designation">Chairperson</p>
+								<!-- /.about-one__designation -->
+							</div><!-- /.about-one__meta -->
+						</div><!-- /.about-one__content -->
+					</div><!-- /.col-lg-6 -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</section><!-- /.sec-pad-top sec-pad-bottom -->
 
-		<section class="sec-pad-top sec-pad-bottom testimonials-one">
-			<div class="testimonials-one__bg"
-				style="background-image: url(assets/images/backgrounds/testimonials-1-bg.jpg);"></div>
-			<!-- /.testimonials-one__bg -->
-			<div class="testimonials-one__gallery">
-				<img src="assets/images/resources/testi-2-1.png" class="float-bob-x" alt="">
-				<img src="assets/images/resources/testi-2-2.png" class="float-bob-y" alt="">
-				<img src="assets/images/resources/testi-2-3.png" class="float-bob-x" alt="">
-				<img src="assets/images/resources/testi-2-4.png" class="float-bob-y" alt="">
-				<img src="assets/images/resources/testi-2-5.png" class="float-bob-x" alt="">
-			</div><!-- /.testimonials-one__gallery -->
+		<section class="sec-pad-top sec-pad-bottom about-five">
 			<div class="container">
 				<div class="row gutter-y-60">
-					<div class="col-lg-5">
-						<div class="testimonials-one__content">
-							<div class="sec-title">
-								<p class="sec-title__tagline">Our feedbacks</p><!-- /.sec-title__tagline -->
-								<h2 class="sec-title__title">What they’re <br>talking about us</h2>
+					<div class="col-md-12 col-lg-6">
+						<div class="about-five__content">
+							<div class="sec-title text-start">
+								<!-- <p class="sec-title__tagline">Ready to help us</p> -->
+								<!-- /.sec-title__tagline -->
+								<h2 class="sec-title__title">The Aarambh Future</h2>
 							</div><!-- /.sec-title -->
-							<p class="testimonials-one__text">Proin a lacus arcu. Nullam id dui eu orci maximus. <br>
-								Cras
-								at auctor lectus, pretium tellus.</p><!-- /.testimonials-one__text -->
-							<a href="#" class="thm-btn testimonials-one__btn"><span>View all feedbacks</span></a>
-						</div><!-- /.testimonials-one__content -->
-					</div><!-- /.col-lg-5 -->
-					<div class="col-lg-7">
-						<div class="thm-tns__carousel" id="testimonials-one-carousel-1" data-tns-options='{
-						"container": "#testimonials-one-carousel-1",
-						"loop": true,
-						"autoplay": true,
-						"items": 1,
-						"gutter": 0,
-						"mouseDrag": true,
-						"touch": true,
-						"nav": false,
-						"autoplayButtonOutput": false,
-						"controls": false
-					}'>
-							<div class="item">
-								<div class="testimonials-card">
-									<i class="paroti-icon-quote testimonials-card__icon"></i>
-									<img src="assets/images/shapes/testimonials-item-bg-1-1.png"
-										class="testimonials-card__bg" alt="">
-									<p class="testimonials-card__text">Proin a lacus arcu nullam id dui eu orci
-										maximus.
-										Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora
-										torquent
-										per conubia nostra.</p><!-- /.testimonials-card__text -->
-									<div class="testimonials-card__meta clearfix">
-										<img src="assets/images/resources/testi-1-1.png" alt="">
-										<h3 class="testimonials-card__name">Mike hardson</h3>
-										<!-- /.testimonials-card__name -->
-										<p class="testimonials-card__designation">Customer</p>
-										<!-- /.testimonials-card__designation -->
-									</div><!-- /.testimonials-card__meta -->
-								</div><!-- /.testimonials-one__card -->
-							</div><!-- /.item -->
-							<div class="item">
-								<div class="testimonials-card">
-									<i class="paroti-icon-quote testimonials-card__icon"></i>
-									<img src="assets/images/shapes/testimonials-item-bg-1-1.png"
-										class="testimonials-card__bg" alt="">
-									<p class="testimonials-card__text">Proin a lacus arcu nullam id dui eu orci
-										maximus.
-										Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora
-										torquent
-										per conubia nostra.</p><!-- /.testimonials-card__text -->
-									<div class="testimonials-card__meta clearfix">
-										<img src="assets/images/resources/testi-1-1.png" alt="">
-										<h3 class="testimonials-card__name">Mike hardson</h3>
-										<!-- /.testimonials-card__name -->
-										<p class="testimonials-card__designation">Customer</p>
-										<!-- /.testimonials-card__designation -->
-									</div><!-- /.testimonials-card__meta -->
-								</div><!-- /.testimonials-one__card -->
-							</div><!-- /.item -->
-							<div class="item">
-								<div class="testimonials-card">
-									<i class="paroti-icon-quote testimonials-card__icon"></i>
-									<img src="assets/images/shapes/testimonials-item-bg-1-1.png"
-										class="testimonials-card__bg" alt="">
-									<p class="testimonials-card__text">Proin a lacus arcu nullam id dui eu orci
-										maximus.
-										Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora
-										torquent
-										per conubia nostra.</p><!-- /.testimonials-card__text -->
-									<div class="testimonials-card__meta clearfix">
-										<img src="assets/images/resources/testi-1-1.png" alt="">
-										<h3 class="testimonials-card__name">Mike hardson</h3>
-										<!-- /.testimonials-card__name -->
-										<p class="testimonials-card__designation">Customer</p>
-										<!-- /.testimonials-card__designation -->
-									</div><!-- /.testimonials-card__meta -->
-								</div><!-- /.testimonials-one__card -->
-							</div><!-- /.item -->
-						</div><!-- /.thm-tns__carousel -->
-					</div><!-- /.col-lg-7 -->
+							<div class="about-five__text">The Aarambh happened with the diligent efforts of Joslyn Choudhary and a few seed members in September 2020 who came together during the pandemic to help those in need. In less than two years, the organisation of a few members gradually received the contribution of students from 14 DU colleges, with the power of social media and conducted countless drives under the various projects. Currently, The Aarambh has become a family of 1500+ members and is spread across more than 50 DU colleges with specific units dedicated to animal welfare, women empowerment, education and elderly care. We are at a stage where we commence all our projects simultaneously and conduct fortnightly drives, headed by dedicated members of The Aarambh</div>
+							<div class="about-five__content__arrow float-bob-x"></div>
+							<!-- /.about-five__content__arrow -->
+						</div><!-- /.about-five__content -->
+					</div><!-- /.col-md-12 col-lg-6 -->
+					<div class="col-md-12 col-lg-6">
+						<div class="row gutter-y-30">
+							<div class="col-lg-6">
+								<div class="">
+									<img src="assets/images/volunteers/Future.jpeg" height="494" width="550" alt="">
+								</div><!-- /.about-six__images -->
+							</div><!-- /.col-lg-6 -->
+						</div><!-- /.row -->
+					</div><!-- /.col-md-12 col-lg-6 -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
-		</section><!-- /.testimonials-one -->
+		</section><!-- /.sec-pad-top -->
 
 		<footer class="site-footer" style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);">
 			<div class="site-footer__top">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms"
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-duration="1500ms"
 							data-wow-delay="000ms">
 							<div class="site-footer__widget site-footer__widget__about">
 								<a href="index-2.html" class="site-footer__widget__logo">
-									<img src="assets/images/logo-light.png" width="127" height="49" alt="">
+									<img src="assets/images/volunteers/Logo.png" width="100" height="100" alt="">
 								</a>
-								<p class="site-footer__widget__text">60 Broklyn Golden Street, New York United States of
-									America</p><!-- /.site-footer__widget__text -->
+								<p class="site-footer__widget__text">Reach out to DU colleges offline.</p><!-- /.site-footer__widget__text -->
 							</div><!-- /.site-footer__widget -->
 						</div><!-- /.col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp -->
-						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms"
-							data-wow-delay="100ms">
-							<div class="site-footer__widget">
-								<h3 class="site-footer__widget__title">Links</h3><!-- /.site-footer__widget__title -->
-								<ul class="list-unstyled site-footer__widget__links">
-									<li><a href="donations.html">Recent causes</a></li>
-									<li><a href="about.html">About us</a></li>
-									<li><a href="donations-details.html">New campaign</a></li>
-									<li><a href="about.html">Site map</a></li>
-									<li><a href="events.html">Events</a></li>
-								</ul><!-- /.list-unstyled site-footer__widget__links -->
-							</div><!-- /.site-footer__widget -->
-						</div><!-- /.col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp -->
-						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms"
-							data-wow-delay="200ms">
-							<div class="site-footer__widget">
-								<h3 class="site-footer__widget__title">Non Profit</h3>
-								<!-- /.site-footer__widget__title -->
-								<ul class="list-unstyled site-footer__widget__links">
-									<li><a href="donations-details.html">Differently abled kids</a></li>
-									<li><a href="donations-details.html">Help child cancer</a></li>
-									<li><a href="donations-details.html">Clean pure water</a></li>
-									<li><a href="donations-details.html">Give them education</a></li>
-									<li><a href="donations-details.html">Start a fundraising</a></li>
-								</ul><!-- /.list-unstyled site-footer__widget__links -->
-							</div><!-- /.site-footer__widget -->
-						</div><!-- /.col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp -->
-						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms"
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-duration="1500ms"
 							data-wow-delay="300ms">
 							<div class="site-footer__widget">
 								<h3 class="site-footer__widget__title">Contact</h3>
@@ -537,16 +264,16 @@
 								<ul class="list-unstyled site-footer__widget__contact">
 									<li>
 										<i class="fa fa-envelope-open"></i>
-										<a href="mailto:needhelp@company.com">needhelp@company.com</a>
+										<a href="mailto:info@theaarambh.org">info@theaarambh.org</a>
 									</li>
 									<li>
 										<i class="fa fa-mobile"></i>
-										<a href="tel:+1(307)776-0608">+ 1 (307) 776-0608</a>
+										<a href="tel:9999999999">9999999999</a>
 									</li>
 								</ul><!-- /.list-unstyled site-footer__widget__contact -->
 							</div><!-- /.site-footer__widget -->
 						</div><!-- /.col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp -->
-						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms"
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-duration="1500ms"
 							data-wow-delay="400ms">
 							<div class="site-footer__widget site-footer__widget__cta">
 								<h3 class="site-footer__widget__title"><span>Raise Money and help them</span></h3>
@@ -564,12 +291,12 @@
 				<div class="container">
 					<div class="site-footer__bottom__inner">
 						<p class="site-footer__bottom__text">© Copyright <span class="dynamic-year"></span> by
-							Layerdrops.com</p><!-- /.site-footer__bottom__text -->
+							The Aarambh Organization</p><!-- /.site-footer__bottom__text -->
 						<div class="site-footer__social">
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-facebook"></i></a>
-							<a href="#"><i class="fab fa-pinterest"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="https://www.youtube.com/@theaarambh"><i class="fab fa-youtube"></i></a>
+							<a href="https://www.facebook.com/theaarambhorganization"><i class="fab fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/company/the-aarambh-organisation/"><i class="fab fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/the.aarambh"><i class="fab fa-instagram"></i></a>
 						</div><!-- /.site-footer__social -->
 
 					</div><!-- /.site-footer__bottom__inner -->
