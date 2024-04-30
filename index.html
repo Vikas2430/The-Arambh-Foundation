@@ -540,8 +540,8 @@
 							<h2 class="sec-title__title">Subscribe to our newsletter</h2>
 						</div><!-- /.sec-title -->
 						<form action="#" class="mc-form newsletter-one__form">
-							<input type="email" placeholder="Your email">
-							<button type="submit" class="newsletter-one__form__btn">
+							<input type="email" id="email" placeholder="Your email">
+							<button type="submit" onclick="SendMail()" class="newsletter-one__form__btn">
 								Subscribe
 							</button>
 						</form>
@@ -689,6 +689,56 @@
 	<script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="assets/vendors/youtube-popup/youtube-popup.jquery.js"></script>
 	<script src="assets/vendors/swiper/swiper.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+        //Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB6ZildniDhSJKlgoWJUq_z3315IY-fAFk",
+            authDomain: "aarambh-3f91e.firebaseapp.com",
+            databaseURL: "https://aarambh-3f91e-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "aarambh-3f91e",
+            storageBucket: "aarambh-3f91e.appspot.com",
+            messagingSenderId: "119135131308",
+            appId: "1:119135131308:web:762e452e9a4a31bbaf3109"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+    </script>
+	<script>
+		function isValidEmail(email) {
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+
+        function SendMail() {
+            var email = document.querySelector("#email").value;
+            var Test = isValidEmail(email);
+            if (email != "" && Test != false) {
+                var emailRef = database.ref("Aarambh Subscriber Emails").push();
+                emailRef.set({
+                    email: email,
+                    // timestamp: firebase.database.ServerValue.TIMESTAMP
+                }, function (error) {
+                    if (error) {
+                        swal("Oops", "Something went wrong!", "error")
+                    } else {
+                        swal("Success", "You will be notified soon.", "success");
+                        document.querySelector("#email").value = "";
+                    }
+                });
+            }
+            else {
+                if (email != "" && Test == false) {
+                    swal("Oops", "Please Enter A valid E-Mail!", "error")
+                }
+                else {
+                    swal("Oops", "Please Enter Your E-Mail!", "error")
+                }
+            }
+        }
+	</script>
 	<!-- template js -->
 	<script src="assets/js/paroti.js"></script>
 </body>
